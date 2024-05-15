@@ -29,7 +29,21 @@
           <li><a href="#">Gallery</a></li>
           <li><a href="#">About Me</a></li>
         </ul>
-        <a href="#" class="btn">Contact</a>
+        <a href="#" class="btn" onclick="openGoogleForm()">Contact</a>
+        <div id="googleFormOverlay" class="overlay">
+          <div id="googleFormPopup" class="popup">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSe-7mFCPecdMPC-TmkMNztifTjwGnv6-h3ywpzdg5p4JzefdQ/viewform?embedded=true"
+              width="500"
+              height="700"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              >Loading…</iframe
+            >
+            <button onclick="closeGoogleForm()">Close</button>
+          </div>
+        </div>
       </div>
 
       <div class="content">
@@ -39,10 +53,7 @@
             <h1>Ryota<span>.O</span></h1>
             <h3>HTML/CSS/JavaScript</h3>
             <div class="newsletter">
-              <form>
-                <input type="text" placeholder="Email Address" />
-                <input type="submit" />
-              </form>
+              <div class="button">View Resume</div>
             </div>
           </div>
           <img src="./img/image.JPG" alt="" />
@@ -68,7 +79,7 @@
             dicta quisquam similique, illo ex et fugiat esse ipsa deserunt
             quaerat maiores. Labore aliquid error saepe? Ipsa.
           </p>
-          <button class="button">Contact</button>
+          <button class="button">More</button>
         </div>
       </div>
     </section>

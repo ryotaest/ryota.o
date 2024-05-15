@@ -7,6 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+function openGoogleForm() {
+  document.getElementById("googleFormOverlay").style.display = "block";
+}
+
+function closeGoogleForm() {
+  document.getElementById("googleFormOverlay").style.display = "none";
+}
+
 function fadeAnime() {
   $(".fadeUpTrigger").each(function () {
     var elemPos = $(this).offset().top - 50;
