@@ -184,7 +184,17 @@ p {
   color: white;
   letter-spacing: 1px;
   line-height: 28px;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
+}
+
+.intro-text i {
+  color: lightblue;
+  font-size: 30px;
+  margin: 25px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button {

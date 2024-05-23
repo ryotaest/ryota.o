@@ -25,8 +25,8 @@
           <i class="fas fa-bars"></i>
         </div>
         <ul class="menu-items">
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Projects</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#">Gallery</a></li>
         </ul>
         <a href="#" class="btn" onclick="openGoogleForm()">Contact</a>
@@ -63,7 +63,7 @@
     </div>
 
     <!-- Introduction-->
-    <section class="introduction">
+    <section class="introduction" id="about">
       <div class="main fadeUpTrigger">
         <div class="circle-image">
           <img src="./img/painting3.png" alt="" />
@@ -72,29 +72,57 @@
         <div class="intro-text">
           <h2>About me</h2>
           <h5>Graduate Developer</h5>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-            aspernatur rem quaerat libero aliquam. Ipsum eveniet hic laborum
-            voluptatum quidem ducimus laboriosam assumenda quaerat aliquid
-            mollitia repellat, veniam ea. Exercitationem debitis ab accusamus
-            dicta quisquam similique, illo ex et fugiat esse ipsa deserunt
-            quaerat maiores. Labore aliquid error saepe? Ipsa.
+          <p id="intro-short">
+            Hello! My name is Ryota Onuma, a passionate and dedicated recent IT
+            graduate with a GPA of 4.5 out of 5.0. While I am at the beginning
+            of my career, I have a strong foundation in front-end development,
+            specializing in creating responsive, user-friendly interfaces that
+            deliver exceptional user experiences. Additionally, I am actively
+            expanding my knowledge in backend development and security.
           </p>
-          <button class="button">More</button>
+
+          <p id="intro-full" style="display: none">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <br />
+            Throughout my academic and professional journey, I have developed a
+            diverse skill set that includes HTML, CSS, JavaScript, jQuery, and
+            React.js for front-end development, as well as Java, C#, and Dart
+            for backend and mobile application development. My proficiency with
+            these technologies has allowed me to contribute effectively to
+            various projects, including cross-platform mobile applications and
+            web-based systems.
+            <br />
+            <i class="fa-solid fa-people-group"></i>
+            <br />
+            In addition to my technical skills, I am a strong team player who
+            thrives in collaborative environments. I believe in continuous
+            learning and always seek opportunities to expand my knowledge and
+            stay updated with the latest industry trends.
+            <br />
+            <i class="fa-solid fa-paintbrush"></i>
+            <br />
+            When I'm not coding, I enjoy exploring new music genres, painting,
+            and spending time outdoors. Feel free to explore my portfolio to see
+            more of my work and don't hesitate to reach out if you'd like to
+            discuss potential collaborations or job opportunities.
+          </p>
+          <button class="button" id="toggle-btn" onclick="toggleText()">
+            More
+          </button>
         </div>
       </div>
     </section>
 
     <!-- Skill section-->
-    <div class="skills">
+    <div class="skills" id="projects">
       <div class="title">
-        <h2>Skills</h2>
+        <h2>Projects</h2>
       </div>
 
       <div class="box fadeUpTrigger">
         <div class="card">
-          <i class="fa-solid fa-code"></i>
-          <h5>Coding</h5>
+          <i class="fa-solid fa-laptop"></i>
+          <h5>Web app</h5>
           <div class="paragraph">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
@@ -102,27 +130,27 @@
               laudantium ad suscipit libero voluptas?
             </p>
             <p style="text-align: center">
-              <a href="#" class="button" id="">More</a>
+              <a href="project1.html" class="button" id="">More</a>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-mobile"></i>
+          <h5>Mobile app</h5>
+          <div class="paragraph">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
+              officiis officia facilis reprehenderit obcaecati voluptatem
+              laudantium ad suscipit libero voluptas?
+            </p>
+            <p style="text-align: center">
+              <a href="project2.html" class="button" id="">More</a>
             </p>
           </div>
         </div>
         <div class="card">
           <i class="fa-solid fa-palette"></i>
-          <h5>Design</h5>
-          <div class="paragraph">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
-              officiis officia facilis reprehenderit obcaecati voluptatem
-              laudantium ad suscipit libero voluptas?
-            </p>
-            <p style="text-align: center">
-              <a href="#" class="button" id="">More</a>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <i class="fa-solid fa-shield-halved"></i>
-          <h5>Security</h5>
+          <h5>My gallery</h5>
           <div class="paragraph">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure

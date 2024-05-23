@@ -15,6 +15,19 @@ function closeGoogleForm() {
   document.getElementById("googleFormOverlay").style.display = "none";
 }
 
+function toggleText() {
+  const fullText = document.getElementById("intro-full");
+  const button = document.getElementById("toggle-btn");
+
+  if (fullText.style.display === "none") {
+    fullText.style.display = "block";
+    button.textContent = "Less";
+  } else {
+    fullText.style.display = "none";
+    button.textContent = "More";
+  }
+}
+
 function fadeAnime() {
   $(".fadeUpTrigger").each(function () {
     var elemPos = $(this).offset().top - 50;
