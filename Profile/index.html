@@ -25,13 +25,14 @@
           <i class="fas fa-bars"></i>
         </div>
         <ul class="menu-items">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Gallery</a></li>
           <li><a href="#">About Me</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Gallery</a></li>
         </ul>
         <a href="#" class="btn" onclick="openGoogleForm()">Contact</a>
         <div id="googleFormOverlay" class="overlay">
           <div id="googleFormPopup" class="popup">
+            <button onclick="closeGoogleForm()">Close</button>
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSe-7mFCPecdMPC-TmkMNztifTjwGnv6-h3ywpzdg5p4JzefdQ/viewform?embedded=true"
               width="500"
@@ -41,7 +42,6 @@
               marginwidth="0"
               >Loading…</iframe
             >
-            <button onclick="closeGoogleForm()">Close</button>
           </div>
         </div>
       </div>
@@ -51,7 +51,8 @@
           <div class="info">
             <h4>Graduate Developer</h4>
             <h1>Ryota<span>.O</span></h1>
-            <h3>HTML/CSS/JavaScript</h3>
+            <h4>Key Technical skills</h4>
+            <p>HTML/CSS/JavaScript/jQuery/React.js <br />Java/C#/Dart</p>
             <div class="newsletter">
               <div class="button">View Resume</div>
             </div>
@@ -70,7 +71,7 @@
 
         <div class="intro-text">
           <h2>About me</h2>
-          <h5>FullStack Developer/Software Engineer</h5>
+          <h5>Graduate Developer</h5>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
             aspernatur rem quaerat libero aliquam. Ipsum eveniet hic laborum
@@ -139,16 +140,19 @@
     <!--Message-->
     <div class="message">
       <p>Please send me a message if you are interested!</p>
-      <a href="#" class="contact-button">Contact</a>
+      <a href="#" class="contact-button" onclick="openGoogleForm()">Contact</a>
     </div>
     <!-- Footer section-->
     <footer>
       <p>Ryota.O</p>
       <p>Other links</p>
       <div class="social">
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://linkedin.com/in/ryota-onuma"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/ryotaest"
+          ><i class="fa-brands fa-github"></i
+        ></a>
       </div>
       <p class="end">CopyRight@Ryota.O</p>
     </footer>

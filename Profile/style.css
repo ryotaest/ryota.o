@@ -19,7 +19,7 @@
   margin-bottom: 150px;
 }
 .menu-icon {
-  display: none; /* Hide the menu icon by default */
+  display: none;
 }
 
 .menu-items {
@@ -46,8 +46,8 @@
   color: white;
   font-size: 35px;
   letter-spacing: 2px;
-  cursor: pointer;
-  margin-left: 50px;
+
+  margin-left: 20px;
 }
 
 span {
@@ -95,15 +95,19 @@ h1 {
   font-size: 75px;
 }
 
-h3 {
-  color: white;
-  font-size: 25px;
-  margin-bottom: 50px;
-}
 h4 {
   color: lightblue;
   letter-spacing: 2px;
   font-size: 20px;
+}
+
+p {
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 28px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .newsletter {
@@ -383,13 +387,14 @@ footer p:nth-child(2) {
   }
 
   .menu-icon {
-    display: block; /* Show the menu icon for smaller screens */
+    display: block;
     cursor: pointer;
   }
 
   .menu-icon i {
     color: white;
     font-size: 25px;
+    overflow: hidden;
   }
 
   .menu-items.active {
@@ -398,8 +403,9 @@ footer p:nth-child(2) {
     background-color: black;
     position: absolute;
     top: 80px;
-    left: 0;
+    right: -100%;
     width: 100%;
+    animation: slideFromRight 0.5s forwards ease-out;
   }
 
   .menu-items.active li {
@@ -411,7 +417,14 @@ footer p:nth-child(2) {
   .menu-items.active li a {
     color: white;
   }
-
+  @keyframes slideFromRight {
+    from {
+      right: -100%;
+    }
+    to {
+      right: 0;
+    }
+  }
   .logo {
     font-size: 25px;
   }
@@ -441,6 +454,17 @@ footer p:nth-child(2) {
   .box {
     flex-direction: column;
   }
+  .popup {
+    width: 95%;
+    max-width: none;
+    max-height: 95%;
+    padding: 15px;
+  }
+
+  .popup iframe {
+    width: 100%;
+    height: 80vh;
+  }
 }
 
 .overlay {
@@ -456,7 +480,7 @@ footer p:nth-child(2) {
 
 .popup {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
