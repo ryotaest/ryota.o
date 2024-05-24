@@ -27,6 +27,9 @@ function toggleText() {
     button.textContent = "More";
   }
 }
+function openPDF() {
+  window.open("resume.pdf", "_blank");
+}
 
 function fadeAnime() {
   $(".fadeUpTrigger").each(function () {
