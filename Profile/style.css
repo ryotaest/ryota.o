@@ -162,6 +162,7 @@ h4 {
 
 .main {
   display: flex;
+
   margin: auto;
   align-items: center;
   justify-content: space-around;
@@ -218,6 +219,7 @@ button:hover {
 .skills {
   background-color: black;
   width: 100%;
+
   padding: 100px 0;
 }
 
