@@ -1,35 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const menuIcon = document.querySelector(".menu-icon");
-  const menuItems = document.querySelector(".menu-items");
-
-  menuIcon.addEventListener("click", function () {
-    menuItems.classList.toggle("active");
-  });
-});
-
-function openGoogleForm() {
-  document.getElementById("googleFormOverlay").style.display = "block";
-}
-
-function closeGoogleForm() {
-  document.getElementById("googleFormOverlay").style.display = "none";
-}
-
-function toggleText() {
-  const fullText = document.getElementById("intro-full");
-  const button = document.getElementById("toggle-btn");
-
-  if (fullText.style.display === "none") {
-    fullText.style.display = "block";
-    button.textContent = "Less";
+window.addEventListener("scroll", function () {
+  let navbar = document.querySelector(".navbar");
+  if (window.scrollY > 200) {
+    navbar.classList.add("scrolled");
   } else {
-    fullText.style.display = "none";
-    button.textContent = "More";
+    navbar.classList.remove("scrolled");
   }
-}
-function openPDF() {
-  window.open("resume.pdf", "_blank");
-}
+});
 
 function fadeAnime() {
   $(".fadeUpTrigger").each(function () {
