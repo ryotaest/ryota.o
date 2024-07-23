@@ -1,64 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: black;
-  color: white;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
+  color: #f1f1f1;
+  background-color: #121212;
 }
 
-h1,
-h2,
-h3 {
-  color: lightblue;
-  border-bottom: solid 1px white;
-  margin-bottom: 25px;
-}
-
-li {
-  padding: 5px;
-}
-
-strong {
-  color: #6495ed;
+h1 {
+  color: turquoise;
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
 }
 
 .btn-secondary {
-  background-color: lightblue;
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  font-size: medium;
-  font-weight: bold;
-  transition: all 0.3s;
+  background-color: rgb(40, 54, 54);
+  border-color: turquoise;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
   border-radius: 20px;
-  margin-left: 10px;
 }
 
 .btn-secondary:hover {
-  transform: scale(1.2);
-  border-radius: 15px;
-  cursor: pointer;
-  background-color: lightblue;
+  background-color: turquoise;
+  border-color: turquoise;
   color: black;
 }
 
-a {
-  font-size: 20px;
-  color: lightblue;
-  transition: all 0.3s;
-  display: block;
-  margin-bottom: 20px;
-}
-
-a:hover {
-  color: #6495ed;
-  text-decoration: none;
-}
-
-.container {
-  padding: 10px;
-  padding-bottom: 50px;
+.lead {
+  color: #cfcfcf;
+  font-size: 1.3rem;
 }
 
 .img-fluid {
-  border: 2px solid lightblue;
-  border-radius: 5px;
+  border-radius: 15px;
+  border: solid 1px turquoise;
+}
+
+h2,
+h3 {
+  color: turquoise;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+strong {
+  color: rgb(54, 164, 153);
+}
+
+ul {
+  color: #cfcfcf;
+  font-size: 1.2rem;
+  list-style-type: disc;
+  margin-left: 20px;
+  padding: 1rem 1rem;
+}
+
+.text-center {
+  color: #cfcfcf;
+}
+
+a {
+  font-size: 1.5rem;
+  color: rgb(159, 201, 197);
+}
+
+.url {
+  margin-bottom: 50px;
+}
+h1::after,
+h2::after,
+h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px; /* Thickness of the line */
+  background-color: turquoise; /* Color of the line */
 }
