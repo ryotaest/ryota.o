@@ -181,7 +181,7 @@ footer .end {
 
 .fadeUp {
   animation-name: fadeUpAnime;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   opacity: 0.5;
 }
@@ -189,7 +189,7 @@ footer .end {
 @keyframes fadeUpAnime {
   from {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(30px);
   }
 
   to {
