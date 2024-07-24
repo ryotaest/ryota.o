@@ -7,6 +7,10 @@ window.addEventListener("scroll", function () {
   }
 });
 
+function openPDF() {
+  window.open("./resume.pdf", "_blank");
+}
+
 function fadeAnime() {
   $(".fadeUpTrigger").each(function () {
     var elemPos = $(this).offset().top - 50;
