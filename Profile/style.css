@@ -71,7 +71,7 @@ img {
 /* Introduction section styling */
 .circle-image {
   margin-bottom: 100px;
-  margin-right: 30px;
+  /* margin-right: 30px; */
 }
 .circle-image img {
   width: 350px;
